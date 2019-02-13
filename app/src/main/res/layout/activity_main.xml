@@ -69,12 +69,12 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="162dp"
+        android:layout_marginStart="164dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="124dp"
+        android:layout_marginEnd="142dp"
         android:text="@string/labelTrue"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toStartOf="@+id/Editor1"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -104,7 +104,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="52dp"
         android:text="@string/labelFalse"
         android:textSize="24sp"
@@ -117,10 +117,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="123dp"
+        android:layout_marginEnd="142dp"
         android:text="@string/labelFalse"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/editor2"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -130,10 +130,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="123dp"
+        android:layout_marginEnd="142dp"
         android:text="@string/labelTrue"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/editor3"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -143,8 +143,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
         android:layout_marginTop="52dp"
+        android:layout_marginEnd="142dp"
         android:text="@string/labelFalse"
         android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/editor4"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -152,74 +154,45 @@
         android:id="@+id/Editor1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="34dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="21dp"
         android:hint="T/F"
         android:inputType="text"
-        app:layout_constraintEnd_toStartOf="@+id/textInputLayout"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="57dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="19dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="T/F" />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        android:layout_width="57dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="19dp"
+    <EditText
+        android:id="@+id/editor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="21dp"
+        android:hint="T/F"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/Editor1" />
 
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="T/F" />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout3"
-        android:layout_width="57dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="19dp"
+    <EditText
+        android:id="@+id/editor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:hint="T/F"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/editor2" />
 
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="T/F" />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout4"
-        android:layout_width="57dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="19dp"
+    <EditText
+        android:id="@+id/editor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="20dp"
+        android:hint="T/F"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
-
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="T/F" />
-    </android.support.design.widget.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/editor3" />
 
     <Button
         android:id="@+id/submitButton"
